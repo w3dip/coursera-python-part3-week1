@@ -1,6 +1,3 @@
-import re
-
-
 def calculate(data, findall):
     matches = findall(r"([abc])(-?=|\+?=)([abc]?)([-|\+]?\d*)")  # Если придумать хорошую регулярку, будет просто
     for v1, s, v2, n in matches:  # Если кортеж такой структуры: var1, [sign]=, [var2], [[+-]number]
